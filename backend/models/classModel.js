@@ -7,14 +7,13 @@ const classSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    password: {
-      type: String,
-      required: true,
-    },
     college: {
       type: mongoose.Types.ObjectId,
       ref: "college",
     },
+    div:{
+      type : Number
+    }
   },
   {
     timestamps: true,
